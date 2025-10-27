@@ -51,14 +51,3 @@ nmap <Leader>bd :bd<CR>
 
 " --- OTHER ---
 nmap <Leader>' :term<CR>
-
-" --- Plugin remaps
-nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
-
-call plug#begin()
-Plug 'junegunn/vim-easy-align'
-Plug 'zivyangll/git-blame.vim'
-call plug#end()
-
-autocmd BufRead,BufNewFile *.rl set filetype=earl
-autocmd BufRead,BufNewFile *.cr set filetype=crucible
